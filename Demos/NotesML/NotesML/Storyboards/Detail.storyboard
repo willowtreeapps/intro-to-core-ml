@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kIW-xa-ymP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="OvJ-xz-C5O">
+            <objects>
+                <viewController id="kIW-xa-ymP" customClass="DetailViewController" customModule="NotesML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zmn-al-DCj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Empty note" translatesAutoresizingMaskIntoConstraints="NO" id="uho-Lb-scZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uho-Lb-scZ" firstAttribute="top" secondItem="Zmn-al-DCj" secondAttribute="top" id="KxT-6R-3uq"/>
+                            <constraint firstItem="sGh-Ut-OzE" firstAttribute="trailing" secondItem="uho-Lb-scZ" secondAttribute="trailing" id="ccq-1w-SMk"/>
+                            <constraint firstAttribute="bottom" secondItem="uho-Lb-scZ" secondAttribute="bottom" id="m8f-LU-Mx6"/>
+                            <constraint firstItem="uho-Lb-scZ" firstAttribute="leading" secondItem="sGh-Ut-OzE" secondAttribute="leading" id="zvi-zg-0rR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sGh-Ut-OzE"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="uho-Lb-scZ" id="mof-AP-PkE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mX0-nQ-c95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="186"/>
+        </scene>
+    </scenes>
+</document>
